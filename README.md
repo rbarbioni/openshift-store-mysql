@@ -23,7 +23,7 @@ Instructions
 
 * Create account https://www.openshift.com/app/account/new
 * Install rhc client tools https://developers.openshift.com/en/managing-client-tools.html
-* rhc create-app store tomcat-7 mysql-5.1 phpmyadmin-3.4 --from-code https://github.com/rbarbioni/openshift-store-mysql.git
+* rhc create-app storemysql tomcat-7 mysql-5.1 phpmyadmin-3.4 --from-code https://github.com/rbarbioni/openshift-store-mysql.git
 * Import your favorite IDE compatible MAVEN projects.
 * Change code, commit and push
 
