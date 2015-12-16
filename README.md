@@ -23,10 +23,25 @@ Instructions
 
 * Create account https://www.openshift.com/app/account/new
 * Install rhc client tools https://developers.openshift.com/en/managing-client-tools.html
-* rhc create-app storemysql tomcat-7 mysql-5.1 phpmyadmin-3.4 --from-code https://github.com/rbarbioni/openshift-store-mysql.git
+* rhc create-app storemysql tomcat-7 mysql-5.5 phpmyadmin-4 --from-code https://github.com/rbarbioni/openshift-store-mysql.git
 * Import your favorite IDE compatible MAVEN projects.
 * Change code, commit and push
 
+Mysql Configurations
+-------
+
+Resources configuration
+
+application.properties is default Spring profiles and Openshift datasource configuration
+application-dev.properties is development configuration, change to your local mysql datasource configuration
+
+Run Application Server in development mode
+
+Add VM arguments or server startup arguments Spring profiles definitions
+
+-Dspring.profiles.active=dev
+
+Defaults is Openshift Spring Profile definitions, no profiles VM arguments data.
 
 
 
